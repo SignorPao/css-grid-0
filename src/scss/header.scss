@@ -1,0 +1,32 @@
+/* header */
+
+.header {
+    display: grid;
+    background-color: $blue_strong;
+    padding: 30px;
+    grid-area: header;
+    
+    & .header__title {
+        display: grid;
+        grid-template-areas: "header-logo header-text";
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+        color: $white;
+        cursor: pointer;
+    }
+
+    & .header__title img {
+        align-self: center;
+        height: 45px;
+        grid-area: "header-logo";
+        color: $white;
+    }
+    
+    & .header__title h1 {
+        font-size: 35px;
+        grid-area: "header-text";
+        // font-family: $font_one;
+        font-weight: 900;
+    }
+}

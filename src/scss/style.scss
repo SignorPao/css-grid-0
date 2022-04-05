@@ -1,0 +1,30 @@
+@import "reset.scss";
+@import "variables";
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav-b"
+        "main"
+        "rightCard"
+        "footer"
+    ;
+    font-family: $font_one;
+
+    @media (min-width: 768px) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "header header header"
+            "nav nav nav"
+            "main main rightCard"
+            "footer footer footer"
+        ;
+    }
+}
+
+@import "header";
+@import "nav";
+@import "main";
+@import "rightCard";
+@import "footer";

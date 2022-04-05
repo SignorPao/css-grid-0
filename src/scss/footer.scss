@@ -1,0 +1,44 @@
+/* footer */
+
+.footer {
+    grid-area: footer;
+    background-color: $blue_strong;
+    color: $white;
+    font-size: 12px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+    
+    &__left__block {
+        display: grid;
+        gap: 10px;
+    }
+
+    &__right__block {
+
+
+        & .me a {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        & .footer__links {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-around;
+
+            & img {
+                width: 18px;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding: 20px 40px 30px 40px;
+    }
+}

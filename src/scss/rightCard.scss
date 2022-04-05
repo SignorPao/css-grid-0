@@ -1,0 +1,62 @@
+/* rightCard */
+
+.right {
+    grid-area: rightCard;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0;
+    
+    &__card {
+        border: 1px solid $black;
+        width: 270px;
+        height: max-content;
+        border-radius: 10px;
+        padding: 20px;
+        display: grid;
+        gap: 20px;
+        grid-auto-rows: min-content;
+
+        & h3 {
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            color: $blue_strong;
+            font-weight: 900;
+        }
+
+        & p {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        &__btn {
+            display: grid;
+            justify-content: center;
+            text-decoration: none;
+
+            & button {
+                padding: 10px 20px;
+                font-size: 18px;
+                background-color: $blue_strong;
+                color: $white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $blue_light;
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            margin-right: 40px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        justify-content: right;
+        padding-left: 10px;
+    }
+}
